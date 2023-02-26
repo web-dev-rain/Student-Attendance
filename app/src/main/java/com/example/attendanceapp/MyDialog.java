@@ -56,7 +56,7 @@ public class MyDialog extends DialogFragment {
         add.setOnClickListener(v -> {
             String roll = roll_edt.getText().toString();
             String name = name_edt.getText().toString();
-            roll_edt.setText(Integer.parseInt(roll) + 1);
+            roll_edt.setText(String.valueOf(Integer.parseInt(roll) + 1));
             listener.onClick(roll, name);
         });
 

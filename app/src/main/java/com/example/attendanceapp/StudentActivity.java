@@ -56,11 +56,11 @@ public class StudentActivity extends AppCompatActivity {
 
         back.setOnClickListener(v -> onBackPressed());
         toolbar.inflateMenu(R.menu.student_menu);
-        toolbar.setOnMenuItemClickListener(menuItem->onMenuItemClick(menuItem));
+        toolbar.setOnMenuItemClickListener(menuItem -> onMenuItemClick(menuItem));
     }
 
     private boolean onMenuItemClick(MenuItem menuItem) {
-        if(menuItem.getItemId() == R.id.add_student){
+        if (menuItem.getItemId() == R.id.add_student) {
             showAddStudentDialog();
         }
         return true;
@@ -69,10 +69,11 @@ public class StudentActivity extends AppCompatActivity {
     private void showAddStudentDialog() {
         MyDialog dialog = new MyDialog();
         dialog.show(getSupportFragmentManager(), MyDialog.STUDENT_ADD_DIALOG);
-        dialog.setListener((roll, name)->addStudent(roll, name));
+        dialog.setListener((roll, name) -> addStudent(roll, name));
     }
 
     private void addStudent(String roll, String name) {
         studentItems.add(new StudentItem(roll, name));
+        adapter.notifyItemChanged(studentItems.size() - 1);
     }
 }
