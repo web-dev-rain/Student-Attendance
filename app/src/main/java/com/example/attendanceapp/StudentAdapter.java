@@ -39,7 +39,8 @@ class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentViewHold
             super(itemView);
             roll = itemView.findViewById(R.id.roll);
             name = itemView.findViewById(R.id.name);
-            itemView.setOnClickListener(v->onItemClickListener.onClick(getAdapterPosition()));
+            status = itemView.findViewById(R.id.status);
+            itemView.setOnClickListener(v -> onItemClickListener.onClick(getAdapterPosition()));
         }
     }
 
@@ -52,12 +53,13 @@ class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.StudentViewHold
 
     @Override
     public void onBindViewHolder(@NonNull StudentViewHolder holder, int position) {
-        holder.className.setText(classItems.get(position).getClassName());
-        holder.subjectName.setText(classItems.get(position).getSubjectName());
+        holder.roll.setText(studentItems.get(position).getRoll());
+        holder.name.setText(studentItems.get(position).getName());
+        holder.status.setText(studentItems.get(position).getStatus());
     }
 
     @Override
     public int getItemCount() {
-        return classItems.size();
+        return studentItems.size();
     }
 }
