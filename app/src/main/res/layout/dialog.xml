@@ -17,7 +17,7 @@
         android:id="@+id/titleDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Title"
+        android:text="Изменить"
         android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="20sp"
@@ -57,7 +57,7 @@
                 android:textColor="@color/normal"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button_colored"
-                android:text="Cancel"
+                android:text="Отмена"
                 />
             <TextView
                 android:layout_width="0dp"
@@ -70,7 +70,7 @@
                 android:textColor="@color/normal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Add"
+                android:text="Ок"
                 android:background="@drawable/rounded_button_colored"
                 />
         </LinearLayout>

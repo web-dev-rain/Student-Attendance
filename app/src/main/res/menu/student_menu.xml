@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/add_student"
-        android:title="ADD STUDENT"/>
+        android:title="Добавить студента"/>
     <item
         android:id="@+id/show_Calendar"
-        android:title="Change Date"/>
+        android:title="Изменить дату"/>
     <item
         android:id="@+id/show_attendance_sheet"
-        android:title="Attendance Sheet"/>
+        android:title="Открыть таблицу"/>
 </menu>

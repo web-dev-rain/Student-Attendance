@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton back = toolbar.findViewById(R.id.back);
         ImageButton save = toolbar.findViewById(R.id.save);
 
-        title.setText("Attendance App");
+        title.setText("Посещаемость групп");
         subtitle.setVisibility(View.GONE);
         back.setVisibility(View.INVISIBLE);
         save.setVisibility(View.INVISIBLE);
